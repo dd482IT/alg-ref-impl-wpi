@@ -8,7 +8,6 @@ import java.util.Arrays;
 
 public class BubbleTest {
 
-    @Test
     public void selectionStringSort() {
         var sorter = new Bubble<Integer>();
         var items = new Integer[]{5, 2, 6, 87, 23, 56};

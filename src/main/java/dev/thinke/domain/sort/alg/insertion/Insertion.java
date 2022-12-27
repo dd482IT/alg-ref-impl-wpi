@@ -8,7 +8,7 @@ import java.util.List;
 public class Insertion<T extends Comparable<T>> implements InPlace<T> {
 
     @Override
-    public List<T> sort(final @NonNull List<T> items) {
+    public List<T> sort(final List<T> items) {
         final int n = items.size();
         for (int i = 0; i < n; i++) {
             for (int s = i; s > 0; s--) {

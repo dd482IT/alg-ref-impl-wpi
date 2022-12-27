@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 public class HashTableTest {
 
-    @Test
     public void test_get_put() {
         var table = new StringHashTable<String>(16);
         table.insert("one", "one");

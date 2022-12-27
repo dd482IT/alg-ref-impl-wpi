@@ -11,7 +11,7 @@ public record Run(Integer startIndex, Integer endIndex) {
         return (this.endIndex - this.startIndex) + 1;
     }
 
-    public <T> List<T> deriveRun(final @NonNull List<T> items) {
+    public <T> List<T> deriveRun(final List<T> items) {
         final var run = new ArrayList<T>(this.size());
         for (int i = this.startIndex; i <= this.endIndex; i++) {
             run.add(items.get(i));

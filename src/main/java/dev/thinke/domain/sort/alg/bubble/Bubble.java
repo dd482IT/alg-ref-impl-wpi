@@ -8,7 +8,7 @@ import java.util.List;
 public class Bubble<T extends Comparable<T>> implements InPlace<T> {
 
     @Override
-    public List<T> sort(final @NonNull List<T> items) {
+    public List<T> sort(final List<T> items) {
         final int n = items.size();
         for (int i = n; i > 0; i--) {
             for (int s = 1; s < i; s++) {

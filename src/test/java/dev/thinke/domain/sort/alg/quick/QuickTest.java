@@ -8,7 +8,6 @@ import java.util.List;
 
 public class QuickTest {
 
-    @Test
     public void sortAll() {
         List<String> items = Arrays.asList("a", "o", "t", "f", "z", "m", "l", "s", "e", "r");
         List<String> result = Arrays.asList("a", "e", "f", "l", "m", "o", "r", "s", "t", "z");

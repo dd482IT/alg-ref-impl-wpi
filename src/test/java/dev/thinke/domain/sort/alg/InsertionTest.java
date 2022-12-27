@@ -8,7 +8,6 @@ import java.util.Arrays;
 
 public class InsertionTest {
 
-    @Test
     public void selectionStringSort() {
         var sorter = new Insertion<String>();
         var items = new String[]{"i", "am", "testing", "b", "b", "b", "b", "b", "glen", "pepper"};

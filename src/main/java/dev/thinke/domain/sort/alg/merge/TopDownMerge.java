@@ -19,7 +19,7 @@ public class TopDownMerge<T extends Comparable<T>> implements NotInPlace<T> {
         this.runStrategy = runStrategy;
     }
 
-    public List<T> sort(final @NonNull List<T> items) {
+    public List<T> sort(final List<T> items) {
         final int n = items.size();
         if (n <= 1) {
             return items;

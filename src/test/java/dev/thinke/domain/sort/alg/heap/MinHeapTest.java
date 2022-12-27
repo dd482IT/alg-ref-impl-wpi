@@ -8,7 +8,6 @@ import java.util.List;
 
 public class MinHeapTest {
 
-    @Test
     public void minHeapElementRetrievalTest() {
         List<String> items = Arrays.asList("a", "o", "t", "f", "z", "m", "l", "s", "e", "r");
         new MinHeap<>(items).sort(items);

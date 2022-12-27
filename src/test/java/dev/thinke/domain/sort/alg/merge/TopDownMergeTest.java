@@ -8,7 +8,6 @@ import java.util.Arrays;
 
 public class TopDownMergeTest {
 
-    @Test
     public void testMerge() {
         var list = Arrays.asList("f", "z", "a", "d", "n", "m", "l", "o", "s");
         var test = new ArrayList<>(list);

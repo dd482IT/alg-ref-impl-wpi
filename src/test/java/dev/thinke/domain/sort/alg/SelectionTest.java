@@ -8,7 +8,6 @@ import java.util.Arrays;
 
 public class SelectionTest {
 
-    @Test
     public void selectionStringSort() {
         var sorter = new Selection<String>();
         var items = new String[]{"me", "testing", "my", "alg"};

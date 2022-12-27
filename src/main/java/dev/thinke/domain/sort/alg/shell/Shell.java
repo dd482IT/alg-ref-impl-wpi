@@ -8,7 +8,7 @@ import java.util.List;
 public class Shell<T extends Comparable<T>> implements InPlace<T> {
 
     @Override
-    public List<T> sort(final @NonNull List<T> items) {
+    public List<T> sort(final List<T> items) {
         final int[] shells = new int[]{6, 3, 1};
         final int n = items.size();
         for (int shell : shells) {

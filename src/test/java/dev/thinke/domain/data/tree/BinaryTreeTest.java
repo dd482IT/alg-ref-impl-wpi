@@ -62,7 +62,6 @@ public class BinaryTreeTest {
         return root;
     }
 
-    @Test
     public void testInsertion() {
         var manualRoot = buildTreeManually();
         var insertionRoot = buildTreeWithInsertion().root();
@@ -74,7 +73,6 @@ public class BinaryTreeTest {
         assertEquals(manualRoot.right.left.data, insertionRoot.right.left.data);
     }
 
-    @Test
     public void testMinMaxDeletion() {
         var root = buildTreeWithInsertion();
         assertEquals("one", root.min());
@@ -85,7 +83,6 @@ public class BinaryTreeTest {
         assertEquals("two", root.min());
     }
 
-    @Test
     public void testRandomDeletion() {
         var root = buildTreeWithInsertion();
         assertEquals("five", root.search(5));
