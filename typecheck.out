@@ -1,0 +1,270 @@
+[WARNING] The following options were not recognized by any processor: '[java]'
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/queue/Heap.java:[8,26] [UnusedVariable] The field 'items' is never read.
+    (see https://errorprone.info/bugpattern/UnusedVariable)
+  Did you mean to remove this line or to remove this line?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/queue/Heap.java:[25,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: T extends @Initialized @NonNull Comparable<T extends @Initialized @NonNull Comparable<T>>
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/Tree.java:[16,19] [EqualsGetClass] Prefer instanceof to getClass when implementing Object#equals.
+    (see https://errorprone.info/bugpattern/EqualsGetClass)
+  Did you mean 'if (!(o instanceof Tree)) return false;'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/Tree.java:[7,22] [initialization.field.uninitialized] the default constructor does not initialize field parent
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/Tree.java:[7,30] [initialization.field.uninitialized] the default constructor does not initialize field left
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/Tree.java:[7,36] [initialization.field.uninitialized] the default constructor does not initialize field right
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/Tree.java:[8,32] [initialization.field.uninitialized] the default constructor does not initialize field data
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/Tree.java:[9,20] [initialization.field.uninitialized] the default constructor does not initialize field nodeType
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/Tree.java:[16,33] [override.param] Incompatible parameter type for o.
+  found   : @Initialized @NonNull Object
+  required: @Initialized @Nullable Object
+  Consequence: method in @Initialized @NonNull Tree<K extends @Initialized @NonNull Comparable<K extends @Initialized @NonNull Comparable<K>>, V extends @Initialized @Nullable Object>
+    @Initialized @NonNull boolean equals(@Initialized @NonNull Tree<K extends @Initialized @NonNull Comparable<K>, V extends @Initialized @Nullable Object> this, @Initialized @NonNull Object p0)
+  cannot override method in @Initialized @NonNull Object
+    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/Tree.java:[20,28] [purity.not.deterministic.not.sideeffectfree.call] call to non-deterministic side-effecting Objects.equal not allowed in deterministic side-effect-free method
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/Tree.java:[25,31] [purity.not.deterministic.not.sideeffectfree.call] call to non-deterministic side-effecting Objects.hashCode not allowed in deterministic side-effect-free method
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/Direction.java:[9,11] [initialization.fields.uninitialized] the constructor does not initialize fields: source, dest
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[5,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[6,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[14,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[15,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[23,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[31,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[39,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[47,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[48,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[56,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedUnsortedDictionary.java:[57,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[7,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[8,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[18,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[19,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[31,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[40,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[49,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[58,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[67,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[12,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[44,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[53,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[62,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/UnsortedDictionary.java:[71,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[7,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[8,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[20,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[21,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[37,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[46,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[55,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[64,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[73,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[12,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[50,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[59,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[68,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SortedDictionary.java:[77,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[131,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[132,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[194,19] [EqualsGetClass] Prefer instanceof to getClass when implementing Object#equals.
+    (see https://errorprone.info/bugpattern/EqualsGetClass)
+  Did you mean 'if (!(o instanceof BinaryTree)) return false;'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[29,19] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[45,19] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[56,19] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[110,34] [assignment] incompatible types in assignment.
+  found   : null (NullType)
+  required: @Initialized @NonNull Tree<K extends @Initialized @NonNull Comparable<K>, V extends @Initialized @Nullable Object>
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[112,35] [assignment] incompatible types in assignment.
+  found   : null (NullType)
+  required: @Initialized @NonNull Tree<K extends @Initialized @NonNull Comparable<K>, V extends @Initialized @Nullable Object>
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[117,33] [assignment] incompatible types in assignment.
+  found   : null (NullType)
+  required: @Initialized @NonNull Tree<K extends @Initialized @NonNull Comparable<K>, V extends @Initialized @Nullable Object>
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[123,28] [assignment] incompatible types in assignment.
+  found   : null (NullType)
+  required: @Initialized @NonNull Tree<K extends @Initialized @NonNull Comparable<K>, V extends @Initialized @Nullable Object>
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[138,35] [assignment] incompatible types in assignment.
+  found   : null (NullType)
+  required: @Initialized @NonNull Tree<K extends @Initialized @NonNull Comparable<K>, V extends @Initialized @Nullable Object>
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[180,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[185,15] [return] incompatible types in return.
+  type of expression: null (NullType)
+  method return type: V extends @Initialized @Nullable Object
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[194,33] [override.param] Incompatible parameter type for o.
+  found   : @Initialized @NonNull Object
+  required: @Initialized @Nullable Object
+  Consequence: method in @Initialized @NonNull BinaryTree<K extends @Initialized @NonNull Comparable<K extends @Initialized @NonNull Comparable<K>>, V extends @Initialized @Nullable Object>
+    @Initialized @NonNull boolean equals(@Initialized @NonNull BinaryTree<K extends @Initialized @NonNull Comparable<K>, V extends @Initialized @Nullable Object> this, @Initialized @NonNull Object p0)
+  cannot override method in @Initialized @NonNull Object
+    @Initialized @NonNull boolean equals(@Initialized @NonNull Object this, @Initialized @Nullable Object p0)
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[198,28] [purity.not.deterministic.not.sideeffectfree.call] call to non-deterministic side-effecting Objects.equal not allowed in deterministic side-effect-free method
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/tree/BinaryTree.java:[203,31] [purity.not.deterministic.not.sideeffectfree.call] call to non-deterministic side-effecting Objects.hashCode not allowed in deterministic side-effect-free method
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[5,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[6,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[14,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[15,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[23,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[31,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[39,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[47,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[48,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[56,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/SinglyLinkedSortedDictionary.java:[57,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[39,19] [UnusedNestedClass] This nested class is unused, and can be removed.
+    (see https://errorprone.info/bugpattern/UnusedNestedClass)
+  Did you mean to remove this line?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[29,23] [UnusedVariable] The field 'nVertices' is never read.
+    (see https://errorprone.info/bugpattern/UnusedVariable)
+  Did you mean to remove this line?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[30,23] [UnusedVariable] The field 'nEdges' is never read.
+    (see https://errorprone.info/bugpattern/UnusedVariable)
+  Did you mean to remove this line?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[31,23] [UnusedVariable] The field 'directed' is never read.
+    (see https://errorprone.info/bugpattern/UnusedVariable)
+  Did you mean to remove this line?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[36,23] [UnusedVariable] The field 'y' is never read.
+    (see https://errorprone.info/bugpattern/UnusedVariable)
+  Did you mean to remove this line?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[35,23] [UnusedVariable] The field 'weight' is never read.
+    (see https://errorprone.info/bugpattern/UnusedVariable)
+  Did you mean to remove this line?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[34,23] [UnusedVariable] The field 'next' is never read.
+    (see https://errorprone.info/bugpattern/UnusedVariable)
+  Did you mean to remove this line?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[19,31] [argument] incompatible argument for parameter arg1 of set.
+  found   : null (NullType)
+  required: @Initialized @NonNull Edge<T extends @Initialized @NonNull Comparable<T>>
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[27,29] [initialization.field.uninitialized] the default constructor does not initialize field edges
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[28,29] [initialization.field.uninitialized] the default constructor does not initialize field degree
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[29,23] [initialization.field.uninitialized] the default constructor does not initialize field nVertices
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[30,23] [initialization.field.uninitialized] the default constructor does not initialize field nEdges
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[31,23] [initialization.field.uninitialized] the default constructor does not initialize field directed
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[34,23] [initialization.field.uninitialized] the default constructor does not initialize field next
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[35,23] [initialization.field.uninitialized] the default constructor does not initialize field weight
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/graph/GraphOperations.java:[36,23] [initialization.field.uninitialized] the default constructor does not initialize field y
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/DoublyLinkedSortedDictionary.java:[5,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/DoublyLinkedSortedDictionary.java:[6,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/DoublyLinkedSortedDictionary.java:[14,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/DoublyLinkedSortedDictionary.java:[15,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
+[WARNING] /home/daniel/Research/experiments-live/alg-ref-impl-wpi/src/main/java/dev/thinke/domain/data/type/DoublyLinkedSortedDictionary.java:[23,7] [EmptyBlockTag] A block tag (@param, @return, @throws, @deprecated) has an empty description. Block tags without descriptions don't add much value for future readers of the code; consider removing the tag entirely or adding a description.
+    (see https://google.github.io/styleguide/javaguide.html#s7.1.3-javadoc-block-tags)
+  Did you mean '*'?
