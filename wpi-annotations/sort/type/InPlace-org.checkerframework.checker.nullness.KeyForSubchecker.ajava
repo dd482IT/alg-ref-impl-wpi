@@ -1,0 +1,17 @@
+package dev.thinke.domain.sort.type;
+
+import java.util.List;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+public interface InPlace<T extends Comparable<T>> {
+
+    @org.checkerframework.dataflow.qual.Pure
+     List<T> sort(List<T> original);
+
+    default void swap( InPlace<T> this,  Integer first,  Integer second,  List<T> items) {
+        final T firstItem = items.get(first);
+        final T secondItem = items.get(second);
+        items.set(first, secondItem);
+        items.set(second, firstItem);
+    }
+}

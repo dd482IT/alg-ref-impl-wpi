@@ -1,0 +1,12 @@
+package dev.thinke.domain.sort.alg;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+interface Direction {
+
+    @org.checkerframework.dataflow.qual.Pure
+    @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Integer delta();
+
+    default @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Integer next(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Integer i) {
+        return i + delta();
+    }
+}

@@ -1,0 +1,32 @@
+package dev.thinke.domain.data.tree;
+
+import com.google.common.base.Objects;
+import dev.thinke.domain.data.type.DictionaryItem;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+class Tree<K extends Comparable<K>, V> {
+
+    public ??? parent, left, right;
+
+    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.MonotonicNonNull DictionaryItem<K, V> data;
+
+    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.MonotonicNonNull NodeType nodeType;
+
+    @org.checkerframework.dataflow.qual.Pure
+    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Boolean isLeaf() {
+        return (left == null) && (right == null);
+    }
+
+    public  @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull boolean equals(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Tree<K, V> this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.Nullable Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Tree<?, ?> tree = (Tree<?, ?>) o;
+        return Objects.equal(data, tree.data);
+    }
+
+    public  @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull int hashCode(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Tree<K, V> this) {
+        return Objects.hashCode(data);
+    }
+}

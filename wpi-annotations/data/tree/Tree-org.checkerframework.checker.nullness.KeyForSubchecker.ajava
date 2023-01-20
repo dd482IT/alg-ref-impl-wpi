@@ -1,0 +1,32 @@
+package dev.thinke.domain.data.tree;
+
+import com.google.common.base.Objects;
+import dev.thinke.domain.data.type.DictionaryItem;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+class Tree<K extends Comparable<K>, V> {
+
+    public  Tree<K, V> parent, left, right;
+
+    public  DictionaryItem<K, V> data;
+
+    public  NodeType nodeType;
+
+    @org.checkerframework.dataflow.qual.Pure
+    public  Boolean isLeaf( Tree<K, V> this) {
+        return (left == null) && (right == null);
+    }
+
+    public   boolean equals( Tree<K, V> this,  Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        Tree<?, ?> tree = (Tree<?, ?>) o;
+        return Objects.equal(data, tree.data);
+    }
+
+    public   int hashCode( Tree<K, V> this) {
+        return Objects.hashCode(data);
+    }
+}

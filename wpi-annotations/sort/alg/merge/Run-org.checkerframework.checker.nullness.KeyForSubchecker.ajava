@@ -1,0 +1,22 @@
+package dev.thinke.domain.sort.alg.merge;
+
+import org.checkerframework.checker.nullness.qual.NonNull;
+import java.util.ArrayList;
+import java.util.List;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+public record Run(Integer startIndex, Integer endIndex) {
+
+    @org.checkerframework.dataflow.qual.Pure
+    public  Integer size( Run this) {
+        return (this.endIndex - this.startIndex) + 1;
+    }
+
+    public <T>  List<T> deriveRun( Run this, final  List<T> items) {
+        final var run = new ArrayList<T>(this.size());
+        for (int i = this.startIndex; i <= this.endIndex; i++) {
+            run.add(items.get(i));
+        }
+        return run;
+    }
+}
