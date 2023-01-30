@@ -1,34 +1,39 @@
 package dev.thinke.domain.data.graph;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.NullnessChecker")
 public class Direction {
 
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Boolean isDirected;
+  private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework
+      .checker.nullness.qual.NonNull Boolean isDirected;
 
-    private @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.MonotonicNonNull Vertex source, dest;
+  private Vertex source, dest;
 
-    public Direction() {
-        this.isDirected = Boolean.FALSE;
-    }
+  public Direction() {
+    this.isDirected = Boolean.FALSE;
+  }
 
-    public Direction(final Vertex source, final Vertex dest) {
-        this.source = source;
-        this.dest = dest;
-        this.isDirected = Boolean.TRUE;
-    }
+  public Direction(final Vertex source, final Vertex dest) {
+    this.source = source;
+    this.dest = dest;
+    this.isDirected = Boolean.TRUE;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Boolean isDirected() {
-        return this.isDirected;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker
+      .nullness.qual.NonNull Boolean isDirected() {
+    return this.isDirected;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Vertex getSource() {
-        return source;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker
+      .nullness.qual.NonNull Vertex getSource() {
+    return source;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Vertex getDest() {
-        return dest;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker
+      .nullness.qual.NonNull Vertex getDest() {
+    return dest;
+  }
 }

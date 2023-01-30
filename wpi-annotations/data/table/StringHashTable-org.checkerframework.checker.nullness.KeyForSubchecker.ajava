@@ -3,35 +3,36 @@ package dev.thinke.domain.data.table;
 import dev.thinke.domain.data.type.Dictionary;
 import org.apache.commons.math3.primes.Primes;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 public class StringHashTable<K extends Comparable<K>> implements Dictionary<K, String> {
 
-    private final  String  [] values;
+  private final String[] values;
 
-    private final  Integer n;
+  private final Integer n;
 
-    public StringHashTable(int capacity) {
-        this.n = Primes.nextPrime(capacity * 2);
-        this.values = new String[this.n];
-    }
+  public StringHashTable(int capacity) {
+    this.n = Primes.nextPrime(capacity * 2);
+    this.values = new String[this.n];
+  }
 
-    public  String search( StringHashTable<K> this, K key) {
-        int i = deriveKey(key);
-        return values[i];
-    }
+  public String search(StringHashTable<K> this, K key) {
+    int i = deriveKey(key);
+    return values[i];
+  }
 
-    public void insert( StringHashTable<K> this, K key,  String value) {
-        int i = deriveKey(key);
-        values[i] = value;
-    }
+  public void insert(StringHashTable<K> this, K key, String value) {
+    int i = deriveKey(key);
+    values[i] = value;
+  }
 
-    public void delete( StringHashTable<K> this, K key) {
-        int i = deriveKey(key);
-        values[i] = null;
-    }
+  public void delete(StringHashTable<K> this, K key) {
+    int i = deriveKey(key);
+    values[i] = null;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public  Integer size( StringHashTable<K> this) {
-        return n;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public Integer size(StringHashTable<K> this) {
+    return n;
+  }
 }

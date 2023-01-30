@@ -2,10 +2,20 @@ package dev.thinke.domain.sort.alg;
 
 import java.util.function.BiConsumer;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.NullnessChecker")
 public class Swap<T> implements BiConsumer<Pair, Index<T>> {
 
-    public void accept(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Swap<T> this, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Pair pair, @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Index<T> items) {
-        items.swap(pair.left(), pair.right());
-    }
+  public void accept(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          Swap<T> this,
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          Pair pair,
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          Index<T> items) {
+    items.swap(pair.left(), pair.right());
+  }
 }

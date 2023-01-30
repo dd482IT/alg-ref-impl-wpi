@@ -2,36 +2,37 @@ package dev.thinke.domain.sort.alg;
 
 import java.util.List;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 public record Index<T>(List<T> items) {
 
-    @org.checkerframework.dataflow.qual.Pure
-    private  Integer index( Index this, final  Integer key) {
-        return key - 1;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  private Integer index(Index this, final Integer key) {
+    return key - 1;
+  }
 
-    public T retrieve( Index this, final  Integer key) {
-        return this.items().get(index(key));
-    }
+  public T retrieve(Index this, final Integer key) {
+    return this.items().get(index(key));
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public T retrieveFirst( Index this) {
-        return items().get(0);
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public T retrieveFirst(Index this) {
+    return items().get(0);
+  }
 
-    public void assign( Index this, final  Integer key, final T element) {
-        this.items().set(index(key), element);
-    }
+  public void assign(Index this, final Integer key, final T element) {
+    this.items().set(index(key), element);
+  }
 
-    public  Integer add( Index this, final T element) {
-        items().add(element);
-        return items().size();
-    }
+  public Integer add(Index this, final T element) {
+    items().add(element);
+    return items().size();
+  }
 
-    public void swap( Index this,  Integer first,  Integer second) {
-        final T firstItem = items.get(index(first));
-        final T secondItem = items.get(index(second));
-        items.set(index(first), secondItem);
-        items.set(index(second), firstItem);
-    }
+  public void swap(Index this, Integer first, Integer second) {
+    final T firstItem = items.get(index(first));
+    final T secondItem = items.get(index(second));
+    items.set(index(first), secondItem);
+    items.set(index(second), firstItem);
+  }
 }

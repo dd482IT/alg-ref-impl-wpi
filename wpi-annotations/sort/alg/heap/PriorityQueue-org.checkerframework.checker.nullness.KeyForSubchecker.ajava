@@ -1,11 +1,12 @@
 package dev.thinke.domain.sort.alg.heap;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 public interface PriorityQueue<T extends Comparable<T>> {
 
-    @org.checkerframework.dataflow.qual.Pure
-    void insert(T element);
+  @org.checkerframework.dataflow.qual.Pure
+  void insert(T element);
 
-    @org.checkerframework.dataflow.qual.Pure
-    T extractMin();
+  @org.checkerframework.dataflow.qual.Pure
+  T extractMin();
 }

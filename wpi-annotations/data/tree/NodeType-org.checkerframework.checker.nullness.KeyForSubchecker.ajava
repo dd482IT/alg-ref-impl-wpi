@@ -1,7 +1,9 @@
 package dev.thinke.domain.data.tree;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 enum NodeType {
-
-    LEFT, RIGHT, ROOT
+  LEFT,
+  RIGHT,
+  ROOT
 }

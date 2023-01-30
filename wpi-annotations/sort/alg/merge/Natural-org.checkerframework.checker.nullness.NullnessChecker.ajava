@@ -4,20 +4,26 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.NullnessChecker")
 public class Natural implements RunStrategy {
 
-    public <T> @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<Run> createRuns(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Natural this, final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<T> original) {
-        final var runs = new LinkedList<Run>();
-        final int n = original.size();
-        final var items = new ArrayList<T>(n);
-        final int endOfLastRun = 0;
-        for (int i = 0; i < n; i++) {
-            T item = original.get(i);
-            int currentRun = i - 0;
-            for (int s = endOfLastRun; s <= i; s++) {
-            }
-        }
-        return runs;
+  public <T> @org.checkerframework.checker.initialization.qual.Initialized
+      @org.checkerframework.checker.nullness.qual.NonNull List<Run> createRuns(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          Natural this,
+      final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework
+              .checker.nullness.qual.NonNull List<T> original) {
+    final var runs = new LinkedList<Run>();
+    final int n = original.size();
+    final var items = new ArrayList<T>(n);
+    final int endOfLastRun = 0;
+    for (int i = 0; i < n; i++) {
+      T item = original.get(i);
+      int currentRun = i - 0;
+      for (int s = endOfLastRun; s <= i; s++) {}
     }
+    return runs;
+  }
 }

@@ -3,56 +3,61 @@ package dev.thinke.domain.data.graph;
 import java.util.HashMap;
 import java.util.Map;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 public class Edge implements Traversable {
 
-    private final  Vertex left, right;
+  private final Vertex left, right;
 
-    private final  Direction direction;
+  private final Direction direction;
 
-    private final  Map<String, Object> attributes;
+  private final Map<String, Object> attributes;
 
-    private  Boolean visited = Boolean.FALSE;
+  private Boolean visited = Boolean.FALSE;
 
-    public Edge(final Vertex left, final Vertex right, final Direction direction) {
-        this.left = left;
-        this.right = right;
-        this.direction = direction;
-        this.attributes = new HashMap<>();
-    }
+  public Edge(final Vertex left, final Vertex right, final Direction direction) {
+    this.left = left;
+    this.right = right;
+    this.direction = direction;
+    this.attributes = new HashMap<>();
+  }
 
-    public Edge(final Vertex left, final Vertex right, final Direction direction, final Map<String, Object> attributes) {
-        this.left = left;
-        this.right = right;
-        this.direction = direction;
-        this.attributes = attributes;
-    }
+  public Edge(
+      final Vertex left,
+      final Vertex right,
+      final Direction direction,
+      final Map<String, Object> attributes) {
+    this.left = left;
+    this.right = right;
+    this.direction = direction;
+    this.attributes = attributes;
+  }
 
-    public void addAttribute(final String key, final Object value) {
-        this.attributes.put(key, value);
-    }
+  public void addAttribute(final String key, final Object value) {
+    this.attributes.put(key, value);
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public  Vertex getLeft() {
-        return left;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public Vertex getLeft() {
+    return left;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public  Vertex getRight() {
-        return right;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public Vertex getRight() {
+    return right;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public  Direction getDirection() {
-        return direction;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public Direction getDirection() {
+    return direction;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public  Boolean getVisited( Edge this) {
-        return visited;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public Boolean getVisited(Edge this) {
+    return visited;
+  }
 
-    public void visit( Edge this) {
-        this.visited = Boolean.TRUE;
-    }
+  public void visit(Edge this) {
+    this.visited = Boolean.TRUE;
+  }
 }

@@ -2,26 +2,33 @@ package dev.thinke.domain.sort.alg.merge;
 
 import java.util.List;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.NullnessChecker")
 public class RunSlice {
 
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Run left;
+  private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework
+      .checker.nullness.qual.NonNull Run left;
 
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Run right;
+  private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework
+      .checker.nullness.qual.NonNull Run right;
 
-    public RunSlice(final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<?> items) {
-        int n = items.size() / 2;
-        this.left = new Run(0, n - 1);
-        this.right = new Run(n, items.size() - 1);
-    }
+  public RunSlice(
+      final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework
+              .checker.nullness.qual.NonNull List<?> items) {
+    int n = items.size() / 2;
+    this.left = new Run(0, n - 1);
+    this.right = new Run(n, items.size() - 1);
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Run getLeft() {
-        return left;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker
+      .nullness.qual.NonNull Run getLeft() {
+    return left;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Run getRight() {
-        return right;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker
+      .nullness.qual.NonNull Run getRight() {
+    return right;
+  }
 }

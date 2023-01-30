@@ -1,58 +1,87 @@
 package dev.thinke.domain.data.type;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
-public abstract class DoublyLinkedUnsortedDictionary<K extends Comparable<K>, V> extends UnsortedDictionary<K, V> {
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.NullnessChecker")
+public abstract class DoublyLinkedUnsortedDictionary<K extends Comparable<K>, V>
+    extends UnsortedDictionary<K, V> {
 
-    /**
-     * @param key
-     * @return
-     */
-    public V search(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull DoublyLinkedUnsortedDictionary<K, V> this, K key) {
-        return super.search(key);
-    }
+  /**
+   * @param key
+   * @return
+   */
+  public V search(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          DoublyLinkedUnsortedDictionary<K, V> this,
+      K key) {
+    return super.search(key);
+  }
 
-    /**
-     * @param key
-     * @param value
-     */
-    public void insert(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull DoublyLinkedUnsortedDictionary<K, V> this, K key, V value) {
-        super.insert(key, value);
-    }
+  /**
+   * @param key
+   * @param value
+   */
+  public void insert(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          DoublyLinkedUnsortedDictionary<K, V> this,
+      K key,
+      V value) {
+    super.insert(key, value);
+  }
 
-    /**
-     * @param key
-     */
-    public void delete(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull DoublyLinkedUnsortedDictionary<K, V> this, K key) {
-        super.delete(key);
-    }
+  /**
+   * @param key
+   */
+  public void delete(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          DoublyLinkedUnsortedDictionary<K, V> this,
+      K key) {
+    super.delete(key);
+  }
 
-    /**
-     * @return
-     */
-    public V max(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull DoublyLinkedUnsortedDictionary<K, V> this) {
-        return super.max();
-    }
+  /**
+   * @return
+   */
+  public V max(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          DoublyLinkedUnsortedDictionary<K, V> this) {
+    return super.max();
+  }
 
-    /**
-     * @return
-     */
-    public V min(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull DoublyLinkedUnsortedDictionary<K, V> this) {
-        return super.min();
-    }
+  /**
+   * @return
+   */
+  public V min(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          DoublyLinkedUnsortedDictionary<K, V> this) {
+    return super.min();
+  }
 
-    /**
-     * @param key
-     * @return
-     */
-    public V previous(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull DoublyLinkedUnsortedDictionary<K, V> this, K key) {
-        return super.previous(key);
-    }
+  /**
+   * @param key
+   * @return
+   */
+  public V previous(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          DoublyLinkedUnsortedDictionary<K, V> this,
+      K key) {
+    return super.previous(key);
+  }
 
-    /**
-     * @param key
-     * @return
-     */
-    public V next(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull DoublyLinkedUnsortedDictionary<K, V> this, K key) {
-        return super.next(key);
-    }
+  /**
+   * @param key
+   * @return
+   */
+  public V next(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          DoublyLinkedUnsortedDictionary<K, V> this,
+      K key) {
+    return super.next(key);
+  }
 }

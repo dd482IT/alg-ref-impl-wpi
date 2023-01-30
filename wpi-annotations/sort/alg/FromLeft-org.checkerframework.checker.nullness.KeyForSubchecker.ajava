@@ -1,10 +1,11 @@
 package dev.thinke.domain.sort.alg;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 class FromLeft implements Direction {
 
-    @org.checkerframework.dataflow.qual.Pure
-    public  Integer delta( FromLeft this) {
-        return 1;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public Integer delta(FromLeft this) {
+    return 1;
+  }
 }

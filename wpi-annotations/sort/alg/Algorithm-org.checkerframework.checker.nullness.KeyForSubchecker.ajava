@@ -1,7 +1,10 @@
 package dev.thinke.domain.sort.alg;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 public enum Algorithm {
-
-    BUBBLE, INSERTION, SELECTION, SHELL
+  BUBBLE,
+  INSERTION,
+  SELECTION,
+  SHELL
 }

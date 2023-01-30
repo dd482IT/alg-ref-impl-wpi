@@ -1,11 +1,12 @@
 package dev.thinke.domain.util;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 public class Math {
 
-    @org.checkerframework.dataflow.qual.Pure
-    public static  Integer hash(final  Object key) {
-        int h;
-        return ((h = key.hashCode()) ^ (h >>> 16));
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public static Integer hash(final Object key) {
+    int h;
+    return ((h = key.hashCode()) ^ (h >>> 16));
+  }
 }

@@ -1,7 +1,9 @@
 package dev.thinke.domain.sort.alg.quick;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.NullnessChecker")
 public enum PartitionStrategy {
-
-    FIRST, LAST, MIDDLE
+  FIRST,
+  LAST,
+  MIDDLE
 }

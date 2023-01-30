@@ -1,27 +1,28 @@
 package dev.thinke.domain.data.graph;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 public class Vertex implements Traversable {
 
-    private final  String label;
+  private final String label;
 
-    private  Boolean visited = Boolean.FALSE;
+  private Boolean visited = Boolean.FALSE;
 
-    public Vertex(final String label) {
-        this.label = label;
-    }
+  public Vertex(final String label) {
+    this.label = label;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public  String getLabel() {
-        return label;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public String getLabel() {
+    return label;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public  Boolean getVisited( Vertex this) {
-        return visited;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public Boolean getVisited(Vertex this) {
+    return visited;
+  }
 
-    public void visit( Vertex this) {
-        this.visited = Boolean.TRUE;
-    }
+  public void visit(Vertex this) {
+    this.visited = Boolean.TRUE;
+  }
 }

@@ -3,25 +3,34 @@ package dev.thinke.domain.data.queue;
 import java.util.ArrayList;
 import java.util.List;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.NullnessChecker")
 public class Heap<T extends Comparable<T>> implements PriorityQueue<T> {
 
-    private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<T> items;
+  private final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework
+      .checker.nullness.qual.NonNull List<T> items;
 
-    public Heap() {
-        this.items = new ArrayList<>();
-    }
+  public Heap() {
+    this.items = new ArrayList<>();
+  }
 
-    public Heap(final List<T> items) {
-        this.items = items;
-    }
+  public Heap(final List<T> items) {
+    this.items = items;
+  }
 
-    @org.checkerframework.dataflow.qual.Pure
-    public void insert(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Heap<T> this, T item) {
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public void insert(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          Heap<T> this,
+      T item) {}
 
-    @org.checkerframework.dataflow.qual.Pure
-    public @org.checkerframework.checker.initialization.qual.FBCBottom @org.checkerframework.checker.nullness.qual.Nullable T extractMin(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Heap<T> this) {
-        return null;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public @org.checkerframework.checker.initialization.qual.FBCBottom @org.checkerframework.checker
+      .nullness.qual.Nullable T extractMin(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          Heap<T> this) {
+    return null;
+  }
 }

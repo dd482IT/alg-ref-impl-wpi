@@ -2,14 +2,16 @@ package dev.thinke.domain.data.type;
 
 /**
  * FIFO
+ *
  * @param <T>
  */
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 public interface Queue<T> {
 
-    @org.checkerframework.dataflow.qual.Pure
-    void enqueue(T x);
+  @org.checkerframework.dataflow.qual.Pure
+  void enqueue(T x);
 
-    @org.checkerframework.dataflow.qual.Pure
-    T dequeue();
+  @org.checkerframework.dataflow.qual.Pure
+  T dequeue();
 }

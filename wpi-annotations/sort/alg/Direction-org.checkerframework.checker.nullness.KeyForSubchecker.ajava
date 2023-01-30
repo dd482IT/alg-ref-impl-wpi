@@ -1,12 +1,13 @@
 package dev.thinke.domain.sort.alg;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.KeyForSubchecker")
 interface Direction {
 
-    @org.checkerframework.dataflow.qual.Pure
-     Integer delta( Direction this);
+  @org.checkerframework.dataflow.qual.Pure
+  Integer delta(Direction this);
 
-    default  Integer next( Direction this,  Integer i) {
-        return i + delta();
-    }
+  default Integer next(Direction this, Integer i) {
+    return i + delta();
+  }
 }

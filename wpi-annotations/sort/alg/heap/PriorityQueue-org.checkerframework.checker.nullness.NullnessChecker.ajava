@@ -1,11 +1,14 @@
 package dev.thinke.domain.sort.alg.heap;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.NullnessChecker")
 public interface PriorityQueue<T extends Comparable<T>> {
 
-    @org.checkerframework.dataflow.qual.Pure
-    void insert(T element);
+  @org.checkerframework.dataflow.qual.Pure
+  void insert(T element);
 
-    @org.checkerframework.dataflow.qual.Pure
-    @org.checkerframework.checker.initialization.qual.FBCBottom @org.checkerframework.checker.nullness.qual.Nullable T extractMin();
+  @org.checkerframework.dataflow.qual.Pure
+  @org.checkerframework.checker.initialization.qual.FBCBottom
+  @org.checkerframework.checker.nullness.qual.Nullable
+  T extractMin();
 }

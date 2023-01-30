@@ -1,10 +1,15 @@
 package dev.thinke.domain.sort.alg;
 
-@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+@org.checkerframework.framework.qual.AnnotatedFor(
+    "org.checkerframework.checker.nullness.NullnessChecker")
 class FromLeft implements Direction {
 
-    @org.checkerframework.dataflow.qual.Pure
-    public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Integer delta(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull FromLeft this) {
-        return 1;
-    }
+  @org.checkerframework.dataflow.qual.Pure
+  public @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker
+      .nullness.qual.NonNull Integer delta(
+      @org.checkerframework.checker.initialization.qual.Initialized
+          @org.checkerframework.checker.nullness.qual.NonNull
+          FromLeft this) {
+    return 1;
+  }
 }
