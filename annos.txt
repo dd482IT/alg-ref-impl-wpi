@@ -1,0 +1,14 @@
+@Pure
+@SideEffectFree
+@Deterministic
+@RequiresQualifier
+@EnsuresQualifer
+@RequiresQualifierIf
+@EnsuresQualiferIf
+@Nullable
+@NonNull 
+@PolyNull
+@MonotonicNonNull
+@RequiresNonNull
+@EnsuresNonNull
+@EnsuresNonNullIf
