@@ -1,0 +1,34 @@
+package dev.thinke.domain.data.graph;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+public class Direction {
+
+    private final  Boolean isDirected;
+
+    private Vertex source, dest;
+
+    public Direction() {
+        this.isDirected = Boolean.FALSE;
+    }
+
+    public Direction(final Vertex source, final Vertex dest) {
+        this.source = source;
+        this.dest = dest;
+        this.isDirected = Boolean.TRUE;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public  Boolean isDirected() {
+        return this.isDirected;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public  Vertex getSource() {
+        return source;
+    }
+
+    @org.checkerframework.dataflow.qual.Pure
+    public  Vertex getDest() {
+        return dest;
+    }
+}

@@ -1,9 +1,0 @@
-package dev.thinke.domain.sort.alg.quick;
-
-@org.checkerframework.framework.qual.AnnotatedFor(
-    "org.checkerframework.checker.nullness.KeyForSubchecker")
-public enum PartitionStrategy {
-  FIRST,
-  LAST,
-  MIDDLE
-}

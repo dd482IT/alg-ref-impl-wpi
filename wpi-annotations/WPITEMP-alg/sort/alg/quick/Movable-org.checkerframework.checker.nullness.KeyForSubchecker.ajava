@@ -1,0 +1,11 @@
+package dev.thinke.domain.sort.alg.quick;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+public interface Movable {
+
+    @org.checkerframework.dataflow.qual.Pure
+     Integer finalIndex();
+
+    @org.checkerframework.dataflow.qual.Pure
+     Boolean inFinalPosition();
+}
