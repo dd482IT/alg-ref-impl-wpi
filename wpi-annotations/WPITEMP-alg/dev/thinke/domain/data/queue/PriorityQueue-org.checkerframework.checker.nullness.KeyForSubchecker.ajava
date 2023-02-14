@@ -1,0 +1,11 @@
+package dev.thinke.domain.data.queue;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+public interface PriorityQueue<T extends Comparable<T>> {
+
+    @org.checkerframework.dataflow.qual.Pure
+    void insert(T item);
+
+    @org.checkerframework.dataflow.qual.Pure
+    T extractMin();
+}

@@ -1,0 +1,11 @@
+package dev.thinke.domain.util;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+public class Math {
+
+    @org.checkerframework.dataflow.qual.Pure
+    public static @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Integer hash(final @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Object key) {
+        int h;
+        return ((h = key.hashCode()) ^ (h >>> 16));
+    }
+}

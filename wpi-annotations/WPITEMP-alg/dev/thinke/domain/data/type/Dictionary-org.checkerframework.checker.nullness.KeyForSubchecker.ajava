@@ -1,0 +1,23 @@
+package dev.thinke.domain.data.type;
+
+import dev.thinke.domain.util.Math;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+public interface Dictionary<K extends Comparable<K>, V> {
+
+    @org.checkerframework.dataflow.qual.Pure
+    V search(K key);
+
+    @org.checkerframework.dataflow.qual.Pure
+    void insert(K key, V value);
+
+    @org.checkerframework.dataflow.qual.Pure
+    void delete(K key);
+
+    @org.checkerframework.dataflow.qual.Pure
+     Integer size( Dictionary<K, V> this);
+
+    default   int deriveKey( Dictionary<K, V> this, Object key) {
+        return Math.hash(key) % size();
+    }
+}

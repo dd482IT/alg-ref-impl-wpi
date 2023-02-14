@@ -1,0 +1,10 @@
+package dev.thinke.domain.sort.type;
+
+import java.util.List;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+public interface NotInPlace<T extends Comparable<T>> {
+
+    @org.checkerframework.dataflow.qual.Pure
+    @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull List<T> sort(List<T> list);
+}

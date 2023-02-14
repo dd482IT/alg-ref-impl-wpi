@@ -1,0 +1,12 @@
+package dev.thinke.domain.sort.alg;
+
+import java.util.function.Predicate;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+record LessThan<T extends Comparable<T>>(T root) implements Predicate<T> {
+
+    @org.checkerframework.dataflow.qual.Pure
+    public  @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull boolean test(@org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull LessThan this, T t) {
+        return root().compareTo(t) < 0;
+    }
+}

@@ -1,0 +1,11 @@
+package dev.thinke.domain.data.graph;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.NullnessChecker")
+public interface Traversable {
+
+    @org.checkerframework.dataflow.qual.Pure
+    @org.checkerframework.checker.initialization.qual.Initialized @org.checkerframework.checker.nullness.qual.NonNull Boolean getVisited();
+
+    @org.checkerframework.dataflow.qual.Pure
+    void visit();
+}
