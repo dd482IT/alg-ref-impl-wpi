@@ -29,7 +29,7 @@ WPITEMPDIR=/tmp/WPITEMP-alg
 # same build system (e.g., because of a project's settings.gradle file).
 
 # Program needs to compiled before running script so WPI creates this directory.
-WPIOUTDIR=./build/whole-program-inference/dev/thinke/domain/ 
+WPIOUTDIR=./build/whole-program-inference/
 
 # Whether to run in debug mode. In debug mode, output is printed to the terminal
 # at the beginning of each iteration, and the diff between each pair of iterations is
