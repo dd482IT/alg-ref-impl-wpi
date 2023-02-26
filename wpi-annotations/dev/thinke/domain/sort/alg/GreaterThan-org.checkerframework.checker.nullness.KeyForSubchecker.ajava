@@ -1,0 +1,12 @@
+package dev.thinke.domain.sort.alg;
+
+import java.util.function.Predicate;
+
+@org.checkerframework.framework.qual.AnnotatedFor("org.checkerframework.checker.nullness.KeyForSubchecker")
+record GreaterThan<T extends Comparable<T>>(T root) implements Predicate<T> {
+
+    @org.checkerframework.dataflow.qual.Pure
+    public   boolean test( GreaterThan this, T t) {
+        return root().compareTo(t) > 0;
+    }
+}
